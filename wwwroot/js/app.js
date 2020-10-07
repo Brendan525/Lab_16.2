@@ -2,9 +2,9 @@ function mountains() {
     var mountains = [
         { name: 'Kilimanjaro', height: 19341 },
         { name: 'Everest', height: 29029 },
-        { name: 'Denali', height: 20310 }
+        { name: 'Denali', height: 20310 } // Name and height of mountain
     ];
-    var tallestMountain = findNameOfTallestMountain(mountains);
+    var tallestMountain = findNameOfTallestMountain(mountains); // A const that is equal to the findNameOfTallestMountain function
     console.log(tallestMountain);
 }
 function findNameOfTallestMountain(mountains) {

@@ -1,21 +1,21 @@
-﻿interface Mountain {
+﻿interface Mountain { // Interface called Mountain
     name: String,
     height: number
 }
 
-function mountains() {
-    let mountains: Mountain[] = [
-        { name: 'Kilimanjaro', height: 19341 },
-        { name: 'Everest', height: 29029 },
-        { name: 'Denali', height: 20310 }
+function mountains() { // Function called mountains
+    let mountains: Mountain[] = [ // Creates an array of Mountains from the interfaces
+        { name: 'Kilimanjaro', height: 19341 }, // Name and height of mountain
+        { name: 'Everest', height: 29029 }, // Name and height of mountain
+        { name: 'Denali', height: 20310 } // Name and height of mountain
     ];
 
-    const tallestMountain = findNameOfTallestMountain(mountains);
+    const tallestMountain = findNameOfTallestMountain(mountains); // A const that is equal to the findNameOfTallestMountain function
     console.log(tallestMountain);
 }
 
-function findNameOfTallestMountain(mountains: Mountain[]) {
-    let tallestMountain: Mountain = {
+function findNameOfTallestMountain(mountains: Mountain[]) { // A function that requires an array of mountains to pass through.
+    let tallestMountain: Mountain = { // Creates an instance of Mountain called tallest Mountain
         name: '',
         height: 0
     };
